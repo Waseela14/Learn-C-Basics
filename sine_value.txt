@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+   double x = 0.5;  // Example value between 0 and 1 (non-inclusive)
+   double sine = sin(x);
+   
+   printf("Enter a number between 0 - 1:");
+   scanf("%lf", &x);
+   if (x >= -1.0 && x <= 1.0) {  // Check if the sine value is in the correct range
+       printf("The sine of %lf is %lf\n", x, sine);
+   } else {
+       printf("Error: sine value is not within given range \n");
+   }
+   
+   return 0;
+}
